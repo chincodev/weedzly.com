@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import { Layout, Breadcumb, StrainCard, Paginator, InstagramBox } from '../../_components'
+import { Layout, Breadcumb, Paginator, InstagramBox } from '../../_components'
 import { strainService } from '../../_services/strain.service'
 import { withRouter } from 'next/router'
 import Router from 'next/router'
+import { StrainCard } from '../../_components/_cards'
 import queryString from 'query-string'
 
 export default function Strains(props) {

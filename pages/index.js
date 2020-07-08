@@ -1,4 +1,7 @@
-import { Layout, HomeTopBanner, HomeMap, PopularProductsHomePanel, FeaturedBrandsHomePanel, FeaturedCategoriesHomePanel, HomeBottomBanners } from '../_components'
+import { Layout, HomeMap } from '../_components'
+import { PopularProducts, FeaturedBrands, FeaturedCategories } from '../_components/_sliders'
+import { FullWidth, HomeBottom, HomeTop } from '../_components/_banners'
+import { Product, Brand, Strain} from '../_components/_cards'
 
 export default function Home() {
 
@@ -6,33 +9,13 @@ export default function Home() {
             <>
                 <Layout> 
                     <div className="home main">
-                        <HomeTopBanner />
-                        <br></br>
-                        <div className="container"><PopularProductsHomePanel /></div>
-                        <br></br>
-                        <div className="container"><FeaturedCategoriesHomePanel /></div>
-                        <br></br><br></br>
+                        <HomeTop />
+                        <div className="container"><PopularProducts /></div>
+                        {/* <div className="container"><FeaturedCategories /></div> */}
                          <HomeMap />
-                        <br></br> 
-                        <div className="container"><FeaturedBrandsHomePanel /></div>
-                        <br></br>
-                        <div className="container"><HomeBottomBanners /></div>
+                        <div className="container"><FeaturedBrands /></div>
+                        {/* <div className="container"><HomeBottom /></div> */}
                     </div>
-                    {/* <div className="grid">
-                        {
-                            items.map(({name, slug, address, _id}) =>
-                                <Link key={_id} href="dispensaries/[slug]" as={`/dispensaries/${slug}`}>
-                                    <a  className="card">
-                                        <>
-                                            <h3>{name} &rarr;</h3>
-                                            <p>{address}</p>
-                                        </>
-                                    </a>
-                                </Link>
-                            )
-                        }
-                    </div> */}
-                    
                 </Layout>
             </>
     )

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { Layout, Breadcumb, FilterTool, ProductCard } from '../_components'
+import { Layout, Breadcumb, FilterTool } from '../_components'
+import { ProductCard } from '../_components/_cards' 
 import { productService } from '../_services/product.service'
 import { Breadcrumbs, BreadcrumbsItem } from 'react-breadcrumbs-dynamic';
 

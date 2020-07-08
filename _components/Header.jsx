@@ -64,7 +64,7 @@ const Header = () => {
                         </button>
                         <Link href="/">
                             <a className="logo">
-                                <img src="/static/images/logo.png" alt="Porto Logo" />
+                                <img src="/static/images/logo.svg" className="navbar-brand-image" alt="Porto Logo" />
                             </a>
                         </Link>
                        
@@ -323,7 +323,7 @@ const Header = () => {
                 </div>
             </div>
 
-             <div className="header-bottom">
+             {/* <div className="header-bottom">
                 <div className="col-lg-4">
                     <div className="service-widget">
                         <i className="service-icon icon-shipping"></i>
@@ -348,7 +348,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>  */}
         </header>
     )
 }

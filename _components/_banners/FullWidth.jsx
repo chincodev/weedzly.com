@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FullWidthBanner () {
+function FullWidth() {
     return (
         <div className="category-banner">
             <div className="container">

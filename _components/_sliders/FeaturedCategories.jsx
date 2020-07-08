@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import Link from "next/link"
 
-function FeaturedCategoriesHomePanel() {
+function FeaturedCategories() {
 
 
     const settings = {
@@ -61,4 +61,4 @@ function FeaturedCategoriesHomePanel() {
         </section>
     )
 }
-export { FeaturedCategoriesHomePanel }
+export { FeaturedCategories }

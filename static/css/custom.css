@@ -419,10 +419,14 @@
 
 .product-default a {
     color: #777;
-    white-space: normal !important; 
-    overflow: hidden;
-    text-overflow: ellipsis;
+}
 
+.custom-card .product-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0rem;
 }
 
 .slick-slider .product-default {
@@ -432,6 +436,56 @@
 
     overflow: hidden;
 }
+
+.inner-category{
+    padding: .5rem;
+    background-color: rgba(159, 113, 177,0.7);
+    position: absolute;
+    color: white;
+    z-index: 4;
+    font-weight: 500;
+    transform: translateX(1px) translateY(1px);
+}
+
+.slick-list{
+    margin-left: -1em !important;
+    margin-right: -1em !important;
+}
+
+.breadcrumb-nav {
+    margin-bottom: 0rem !important;
+
+}
+.offmargin{
+    margin-left: -2.9em;
+    margin-right: -2.9em;
+}
+
+.page-header{
+    
+}
+
+.page-header h1{
+    color: #272727;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.product-panel.mg-top{
+    margin-top: 6em !important;
+}
+
+.navbar-brand-image {
+    display: block;
+    height: 5rem !important;
+    width: auto !important;
+}
+
+@media screen and (min-width: 992px)
+{.page-header {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}}
 
 .btn.custom-black:hover{
     background-color: #693686;
@@ -447,4 +501,35 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
+}
+
+.product-default .product-title a {
+    font-weight: 700;
+    color: rgb(49, 49, 49);
+}
+
+
+
+.slidesDot li.slick-active div{
+    background: #8b33b4;;
+}
+
+.slidesDot li div{
+width: 10px;
+height: 10px;
+cursor: pointer;
+border-radius: 50%;
+margin: 0 5px;
+padding: 5px;
+background: rgb(206, 206, 206);
+transition: 0.5s all;
+-webkit-transition: 0.5s all;
+}
+.slidesDot{
+display: flex !important;
+align-items: center;
+justify-content: center;
+/* position: absolute;
+margin-top: -20px; */
+width: 100%;
 }

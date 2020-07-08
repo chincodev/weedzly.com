@@ -1,4 +1,4 @@
-function HomeBottomBanners () {
+function HomeBottom () {
 
     return(
 
@@ -39,4 +39,4 @@ function HomeBottomBanners () {
 
 }
 
-export { HomeBottomBanners }
+export { HomeBottom }

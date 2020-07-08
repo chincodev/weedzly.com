@@ -75,34 +75,34 @@ function HomeMap() {
 
     if(!items) return <h1>LOADING</h1>
         return (
+            <div className="container">
+                <div className="home-banner mb-3" style={{backgroundColor: "#f2f2f2"}}>
+                    <div className="banner-left" style={{width:"33.33%"}}>
+                        <div className="slider-styled">
+                            <span>FIND</span>
+                            <h2>DISPENSARIES</h2>
+                            <p>Near You</p>
+                        </div>
+                    </div>
+                    <div className="banner-right" style={{width:"66.66667%"}}>
+                        <MapGL
+                            mapStyle="mapbox://styles/mapbox/light-v10"
+                            mapboxApiAccessToken="pk.eyJ1IjoiYW50aG9ueTk1MiIsImEiOiJjazl2enJuMWswNHJhM21vNHBpZGF3eXp0In0.zIyPl0plESkg395zI-WVsg"
+                            onViewportChange={(viewport) => setState({viewport})}
+                            {...state.settings}
+                            {...state.viewport}
 
-            <div className="home-banner mb-3" style={{backgroundColor: "#f2f2f2"}}>
-                <div className="banner-left" style={{width:"33.33%"}}>
-                    <div className="slider-styled">
-                        <span>FIND</span>
-                        <h2>DISPENSARIES</h2>
-                        <p>Near You</p>
+                        >
+                            <GeolocateControl
+                                positionOptions={{enableHighAccuracy: true}}
+                                trackUserLocation={true}
+                            /> 
+                            <Pins data={items} onClick={_onClickMarker} onMouseLeaving={onMouseLeaving} />
+                            { _renderPopup() } 
+                        </MapGL>
                     </div>
                 </div>
-                <div className="banner-right" style={{width:"66.66667%"}}>
-                    <MapGL
-                        mapStyle="mapbox://styles/mapbox/light-v10"
-                        mapboxApiAccessToken="pk.eyJ1IjoiYW50aG9ueTk1MiIsImEiOiJjazl2enJuMWswNHJhM21vNHBpZGF3eXp0In0.zIyPl0plESkg395zI-WVsg"
-                        onViewportChange={(viewport) => setState({viewport})}
-                        {...state.settings}
-                        {...state.viewport}
-                       
-                    >
-                        <GeolocateControl
-                            positionOptions={{enableHighAccuracy: true}}
-                            trackUserLocation={true}
-                        /> 
-                        <Pins data={items} onClick={_onClickMarker} onMouseLeaving={onMouseLeaving} />
-                        { _renderPopup() } 
-                    </MapGL>
-                </div>
-            </div>
-                  
+            </div>   
         )
 
 }

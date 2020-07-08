@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 
-function HomeTopBanner() {
+function HomeTop() {
 
     const settings = {
         dots: true,
@@ -11,7 +11,14 @@ function HomeTopBanner() {
         slidesToScroll: 1,
         initialSlide: 1,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 5000,
+        arrows: false,
+        dotsClass: "slidesDot",
+        customPaging: function(i) {
+            return (
+              <div className="slidesDotNutton"></div>
+            );
+          }
       };
 
       return(
@@ -27,10 +34,8 @@ function HomeTopBanner() {
                         <img src={"/static/images/banner3.jpg"} />
                     </div>
                 </Slider>
-                <br></br>
-                <br></br>
             </>
       )
 };
 
-export { HomeTopBanner }
+export { HomeTop }

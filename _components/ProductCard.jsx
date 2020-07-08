@@ -4,11 +4,11 @@ import Link from 'next/link'
 const ProductCard = (props) => {
     return (
         <div className={props.cardSize}>
-            <div style={{border: "1px solid rgb(241, 241, 241)"}} className={`product-default inner-quickview inner-icon ${(props.center)?"center-details":""}`}>
+            <div  className={`product-default inner-quickview inner-icon ${(props.center)?"center-details":""}`}>
                 <div className="figure-container" >
                     <Link  key={props.item._id} href="[slug]" as={`${props.item.slug}`}>
                         <a>
-                            <div style={{width:"100%", height:"100%", background:`url('${props.item.picture}') no-repeat center`, backgroundSize: "cover"}}></div>
+                        <div style={{width:"100%",border:"1px solid #f1f1f1", height:"100%", background:`url('${props.item.picture}')`, backgroundSize: "cover", backgroundPosition:"center", backgroundRepeat: "no-repeat"}}></div>
                         </a>
                     </Link> 
                     {/* <Link href="products/[slug]" as={`/products/${props.item.slug}`}>

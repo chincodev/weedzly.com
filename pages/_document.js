@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
                     <link rel="stylesheet" type="text/css" href="/static/css/style.min.css" />
                     <link rel="stylesheet" type="text/css" href="/static/css/custom.css" />
                     <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
-                    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+                    <link rel="stylesheet" type="text/css" href="../static/css/slick.theme.min.css" />
                     <link rel="stylesheet" href="/static/vendor/fontawesome-free/css/all.min.css" />
                     <script defer type="text/javascript" src="/static/js/jquery.min.js"></script>
                     <script defer type="text/javascript" src="/static/js/plugins.min.js"></script>

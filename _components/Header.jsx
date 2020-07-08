@@ -323,7 +323,7 @@ const Header = () => {
                 </div>
             </div>
 
-            {/* <div className="header-bottom">
+             <div className="header-bottom">
                 <div className="col-lg-4">
                     <div className="service-widget">
                         <i className="service-icon icon-shipping"></i>
@@ -348,7 +348,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div> 
         </header>
     )
 }
